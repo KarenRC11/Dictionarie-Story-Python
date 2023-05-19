@@ -1,0 +1,21 @@
+# DICTIONARIES
+
+d = {'k1': 'v1', 'k2': 'v2'}
+
+print(d.keys()) #→ return dict_keys(‘k1’, ‘k2# ’}
+
+#Story
+
+pages = [
+    "Page 1) What do you want to do\n 1)\n 2)\n 3)\n",
+    "Page 2) What do you want to do\n\n 1)\n 2)\n 3)\n",
+    "Page 3) What do you want to do\n\n 1)\n 2)\n 3)\n",
+]
+
+def showPage(pageNumber):
+    text = pages[pageNumber]
+    print(text)
+    response = input()
+    showPage(int(response))
+
+showPage(0)
